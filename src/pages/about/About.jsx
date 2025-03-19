@@ -4,8 +4,6 @@ import img2 from "../../assets/about/food.jpg";
 import img3 from "../../assets/about/hobby.jpg";
 import img4 from "../../assets/about/nature.jpg";
 import img5 from "../../assets/about/technology.jpg";
-import Add from "./Add";
-import OurStory from "./OurStory";
 import Reviews from "../Review/Reviews";
 
 const About = () => {
@@ -24,7 +22,7 @@ const About = () => {
             Make your dreams come to life
           </p>
         </div>
-        
+
       </div>
       <div className=" p-3 space-y-7 mt-5 md:mt-20  md:max-w-6xl mx-auto">
         <h2 className="text-center text-3xl underline">
@@ -110,7 +108,7 @@ const About = () => {
         </div>
       </div>
       {/* <Add></Add> */}
-      <OurStory></OurStory>
+
       <Reviews></Reviews>
     </div>
   );

@@ -73,7 +73,6 @@ const MagicBanner = () => {
                 {/* using tailwind  */}
                 <div>
                   <div>
-                    <p className="text-xl ml-1 font-semibold tracking-wider text-slate-300">Dream Craft Events</p>
                   </div>
                   <div className="my-5"><h1 className="text-3xl lg:text-6xl font-bold text-slate-200">Our Events</h1></div>
                   <div className="my-5"><h1 className="drop-shadow-2xl text-lime-500 text-5xl lg:text-7xl font-bold">Book Now!</h1></div>
@@ -85,14 +84,7 @@ const MagicBanner = () => {
                 </div>
                 {/* using tailwind  */}
 
-                <Link to="/events">
-                  <button
-                    type="button"
-                    className="mt-14 text-white bg-gradient-to-r from-rose-700 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 font-medium rounded-lg text-lg px-7 py-2 text-center  mb-2"
-                  >
-                    See More
-                  </button>
-                </Link>
+
               </div>
 
             </div>
@@ -103,11 +95,10 @@ const MagicBanner = () => {
           {[img1, img2, img3, img4].map((img, index) => (
             <div
               key={index}
-              className={`item ${
-                currentSlide === index
+              className={`item ${currentSlide === index
                   ? "border-4 rounded-3xl border-rose-500"
                   : ""
-              }`}
+                }`}
               onClick={() => setCurrentSlide(index)}
             >
               <img src={img} alt={`Thumbnail ${index + 1}`} />

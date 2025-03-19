@@ -13,12 +13,6 @@ import { VscLocation } from "react-icons/vsc";
 import { Link, useParams } from "react-router-dom";
 import loadingAnimation from "../../assets/animation/animation.json";
 import { useEffect, useState } from "react";
-import mamun from '../../assets/team/Mamun.jpg';
-import nizam from '../../assets/team/Nizam.png';
-import ali from '../../assets/team/Ali.png';
-import saikat from '../../assets/team/Saikat.png';
-import nelima from '../../assets/team/Nelima.png';
-import rakib from '../../assets/team/Rakib.png';
 
 
 
@@ -57,7 +51,7 @@ const EventDetails = () => {
 
   const {
     data: allEvents = [],
-    
+
   } = useQuery({
     queryKey: ["allEvents"],
     queryFn: recentEvents,
@@ -80,7 +74,7 @@ const EventDetails = () => {
       />
     );
   }
-  
+
 
   if (error) {
     return <p>Error loading events: {error.message}</p>;
@@ -419,16 +413,16 @@ const EventDetails = () => {
                     <h3 className="text-sm font-semibold">
                       {event.title}
                     </h3>
-                    
-                      <p className="flex items-center text-sm gap-2">
-                        <CiCalendarDate className="text-sm" />
-                        {event.date.slice(0, 10)}
-                      </p>
-                      <p className="flex items-center gap-2 text-sm text-red-600 font-semibold ">
-                        <BsDiagram3 className="text-sm" />
-                        {event.seat} Seat
-                      </p>
-                    
+
+                    <p className="flex items-center text-sm gap-2">
+                      <CiCalendarDate className="text-sm" />
+                      {event.date.slice(0, 10)}
+                    </p>
+                    <p className="flex items-center gap-2 text-sm text-red-600 font-semibold ">
+                      <BsDiagram3 className="text-sm" />
+                      {event.seat} Seat
+                    </p>
+
                   </div>
                 </div>)
               }

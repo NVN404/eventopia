@@ -20,7 +20,6 @@ import ErrorPage from "../pages/error/ErrorPage";
 import EventDetails from "../pages/eventDetails/EventDetails";
 import Home from "../pages/home/Home";
 import PaymentPage from "../pages/payment/PaymentPage";
-import Portfolio from "../pages/portfolio/Portfolio";
 import Schedule from "../pages/schedule/Schedule";
 import Shop from "../pages/shop/Shop";
 import AdminRouter from "./AdminRoute";
@@ -74,10 +73,7 @@ const Router = createBrowserRouter([
                 path: "/contact",
                 element: <Contact />,
             },
-            {
-                path: "/portfolio",
-                element: <Portfolio />,
-            },
+
             {
                 path: "/schedule",
                 element: <Schedule />,

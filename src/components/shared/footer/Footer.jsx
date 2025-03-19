@@ -193,7 +193,7 @@ const Footer = () => {
                     />
                   </svg>
                   <span className="md:flex-1 text-gray-700">
-                  <a href="mailto:info@dreamcraft.com">info@dreamcraft.com</a>                  </span>
+                    <a href="mailto:info@dreamcraft.com">yugitha2003@gmail.com</a>                  </span>
                 </li>
 
 
@@ -218,7 +218,7 @@ const Footer = () => {
                       />
                     </svg>
                     <span className="md:flex-1 text-gray-700">
-                      <a href="tel:+8801916498482">+8801916498482</a>
+                      <a href="tel ">+91 1209484726</a>
                     </span>
                   </Link>
                 </li>
@@ -243,7 +243,7 @@ const Footer = () => {
                     />
                   </svg>
                   <address className="-mt-0.5 md:flex-1 not-italic text-gray-700">
-                    1213 Dhaka, Bangladesh</address>
+                    bangalore</address>
                 </li>
               </ul>
             </div>
@@ -255,7 +255,7 @@ const Footer = () => {
               <span className="block sm:inline">All rights reserved.</span>
             </p>
             <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
-              © {new Date().getFullYear()} Dream Craft Events
+              © {new Date().getFullYear()} Eventopia
             </p>
           </div>
         </div>
